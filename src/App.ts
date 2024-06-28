@@ -49,7 +49,7 @@ export default class App{
 
     let linesMesh:THREE.Mesh;
     // const segments = this.points.length * this.points.length;
-    const segments = this.points.length * 42 * 2;
+    const segments = this.points.length * 100 * 2;
     let linesMeshShader:THREE.WebGLProgramParametersWithUniforms|null=null;
     {
       const geometry=new THREE.BufferGeometry();
@@ -63,7 +63,6 @@ export default class App{
       geometry.computeBoundingSphere();
       geometry.setDrawRange( 0, 0 );
 
-
       const material = new THREE.MeshBasicMaterial( {
         vertexColors: true,
         // color:0xffffff,
@@ -71,11 +70,99 @@ export default class App{
         transparent: true,
       } );
       linesMesh = new THREE.Mesh(geometry,material);
-      linesMesh.userData={
-        positions,
-        colors,
-        uvs,
-      };
+      {
+        const box=new THREE.Box3(new THREE.Vector3(-4,-4,0),new THREE.Vector3(4,4,0));
+        const vList=this.points.map((point)=>{
+          const v=new THREE.Vector3(
+            THREE.MathUtils.mapLinear(point.lng,this.min.lng,this.max.lng,box.min.x,box.max.x),
+            THREE.MathUtils.mapLinear(point.lat,this.min.lat,this.max.lat,box.min.y,box.max.y),
+            0
+          );
+          return v;
+        });
+    
+        let vertexpos = 0;
+        let colorpos = 0;
+        let uvpos=0;
+        let numConnected = 0;
+  
+        const vDiff=new THREE.Vector3();
+        const vCamera=new THREE.Vector3(0,0,1);
+        const lineWidth=0.01;
+        const vSide=new THREE.Vector3();
+        const minDistance=(box.max.x - box.min.x)*0.015;
+        const colorList:THREE.Color[]=[];
+        for(let i=0;i<6;i++){
+          const color = new THREE.Color();
+          color.setHSL(i/6,1,0.5);
+          colorList.push(color);
+        }
+        new THREE.Color(1,1,1);
+        for(let vFrom of vList){
+          for(let vTo of vList){
+            if(vFrom===vTo){
+              continue;
+            }
+            if(segments<numConnected * 2){
+              continue;
+            }
+            vDiff.x=vTo.x-vFrom.x;
+            vDiff.y=vTo.y-vFrom.y;
+            vDiff.z=vTo.z-vFrom.z;
+            if(vDiff.lengthSq()<minDistance*minDistance){
+              vSide.crossVectors(vCamera,vDiff).normalize().multiplyScalar(lineWidth*0.5);
+              positions[vertexpos++]=vFrom.x+vSide.x;
+              positions[vertexpos++]=vFrom.y+vSide.y;
+              positions[vertexpos++]=vFrom.z+vSide.z;
+              positions[vertexpos++]=vFrom.x-vSide.x;
+              positions[vertexpos++]=vFrom.y-vSide.y;
+              positions[vertexpos++]=vFrom.z-vSide.z;
+              positions[vertexpos++]=vTo.x-vSide.x;
+              positions[vertexpos++]=vTo.y-vSide.y;
+              positions[vertexpos++]=vTo.z-vSide.z;
+              positions[vertexpos++]=vTo.x-vSide.x;
+              positions[vertexpos++]=vTo.y-vSide.y;
+              positions[vertexpos++]=vTo.z-vSide.z;
+              positions[vertexpos++]=vTo.x+vSide.x;
+              positions[vertexpos++]=vTo.y+vSide.y;
+              positions[vertexpos++]=vTo.z+vSide.z;
+              positions[vertexpos++]=vFrom.x+vSide.x;
+              positions[vertexpos++]=vFrom.y+vSide.y;
+              positions[vertexpos++]=vFrom.z+vSide.z;
+              const color=colorList[numConnected%6];
+              for(let i=0;i<6;i++){
+                colors[colorpos++]=color.r;
+                colors[colorpos++]=color.g;
+                colors[colorpos++]=color.b;
+              }
+              uvs[uvpos++]=0;
+              uvs[uvpos++]=0;
+              uvs[uvpos++]=0;
+              uvs[uvpos++]=1;
+              uvs[uvpos++]=1;
+              uvs[uvpos++]=1;
+  
+              uvs[uvpos++]=1;
+              uvs[uvpos++]=1;
+              uvs[uvpos++]=1;
+              uvs[uvpos++]=0;
+              uvs[uvpos++]=0;
+              uvs[uvpos++]=0;
+  
+              numConnected++;
+            }
+  
+          }
+        }
+  
+        linesMesh.geometry.setDrawRange( 0, numConnected * 6 );
+        linesMesh.geometry.attributes.position.needsUpdate = true;
+        linesMesh.geometry.attributes.color.needsUpdate = true;
+        linesMesh.geometry.attributes.uv.needsUpdate = true;
+        // linesMesh.computeLineDistances();
+        // console.log(numConnected/vList.length);
+  
+      }
       material.onBeforeCompile=(shader)=>{
         linesMeshShader=shader;
         shader.uniforms["uTime"]={value:0};
@@ -94,17 +181,8 @@ gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
       scene.add(linesMesh);
     }
     
-    camera.position.z = 5;
+    camera.position.z = 6;
     
-    const box=new THREE.Box3(new THREE.Vector3(-3,-3,0),new THREE.Vector3(3,3,0));
-    const vList=this.points.map((point)=>{
-      const v=new THREE.Vector3(
-        THREE.MathUtils.mapLinear(point.lng,this.min.lng,this.max.lng,box.min.x,box.max.x),
-        THREE.MathUtils.mapLinear(point.lat,this.min.lat,this.max.lat,box.min.y,box.max.y),
-        0
-      );
-      return v;
-    });
 
     const onResize=()=>{
       const {width,height}=getElementSize(this.sectionElement);
@@ -118,99 +196,10 @@ gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
     const animate=()=> {
     
       this.stats.begin();
-      const {
-        positions,
-        colors,
-        uvs,
-      }=linesMesh.userData as {
-        positions:Float32Array,
-        colors:Float32Array,
-        uvs:Float32Array,
-      };
 
-      let vertexpos = 0;
-      let colorpos = 0;
-      let uvpos=0;
-      let numConnected = 0;
-
-      const vDiff=new THREE.Vector3();
-      const vCamera=new THREE.Vector3(0,0,1);
-      const lineWidth=0.01;
-      const vSide=new THREE.Vector3();
-      const minDistance=(box.max.x - box.min.x)*0.01;
-      const colorList:THREE.Color[]=[];
-      for(let i=0;i<6;i++){
-        const color = new THREE.Color();
-        color.setHSL(i/6,1,0.5);
-        colorList.push(color);
-      }
-      new THREE.Color(1,1,1);
-      for(let vFrom of vList){
-        for(let vTo of vList){
-          if(vFrom===vTo){
-            continue;
-          }
-          if(segments<numConnected * 2){
-            continue;
-          }
-          vDiff.x=vTo.x-vFrom.x;
-          vDiff.y=vTo.y-vFrom.y;
-          vDiff.z=vTo.z-vFrom.z;
-          if(vDiff.lengthSq()<minDistance*minDistance){
-            vSide.crossVectors(vCamera,vDiff).normalize().multiplyScalar(lineWidth*0.5);
-            positions[vertexpos++]=vFrom.x+vSide.x;
-            positions[vertexpos++]=vFrom.y+vSide.y;
-            positions[vertexpos++]=vFrom.z+vSide.z;
-            positions[vertexpos++]=vFrom.x-vSide.x;
-            positions[vertexpos++]=vFrom.y-vSide.y;
-            positions[vertexpos++]=vFrom.z-vSide.z;
-            positions[vertexpos++]=vTo.x-vSide.x;
-            positions[vertexpos++]=vTo.y-vSide.y;
-            positions[vertexpos++]=vTo.z-vSide.z;
-            positions[vertexpos++]=vTo.x-vSide.x;
-            positions[vertexpos++]=vTo.y-vSide.y;
-            positions[vertexpos++]=vTo.z-vSide.z;
-            positions[vertexpos++]=vTo.x+vSide.x;
-            positions[vertexpos++]=vTo.y+vSide.y;
-            positions[vertexpos++]=vTo.z+vSide.z;
-            positions[vertexpos++]=vFrom.x+vSide.x;
-            positions[vertexpos++]=vFrom.y+vSide.y;
-            positions[vertexpos++]=vFrom.z+vSide.z;
-            const color=colorList[numConnected%6];
-            for(let i=0;i<6;i++){
-              colors[colorpos++]=color.r;
-              colors[colorpos++]=color.g;
-              colors[colorpos++]=color.b;
-            }
-            uvs[uvpos++]=0;
-            uvs[uvpos++]=0;
-            uvs[uvpos++]=0;
-            uvs[uvpos++]=1;
-            uvs[uvpos++]=1;
-            uvs[uvpos++]=1;
-
-            uvs[uvpos++]=1;
-            uvs[uvpos++]=1;
-            uvs[uvpos++]=1;
-            uvs[uvpos++]=0;
-            uvs[uvpos++]=0;
-            uvs[uvpos++]=0;
-
-            numConnected++;
-          }
-
-        }
-      }
-
-      linesMesh.geometry.setDrawRange( 0, numConnected * 6 );
-      linesMesh.geometry.attributes.position.needsUpdate = true;
-      linesMesh.geometry.attributes.color.needsUpdate = true;
-      linesMesh.geometry.attributes.uv.needsUpdate = true;
       if(linesMeshShader){
         linesMeshShader.uniforms["uTime"].value=performance.now()/1000;
       }
-      // linesMesh.computeLineDistances();
-      // console.log(numConnected/vList.length);
       renderer.render( scene, camera );
       this.stats.end();
     
