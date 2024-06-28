@@ -70,6 +70,7 @@ export default class App{
         vertexColors: true,
         // color:0xffffff,
         blending: THREE.AdditiveBlending,
+        depthTest:false,
         transparent: true,
       } );
       linesMesh = new THREE.Mesh(geometry,material);
