@@ -72,6 +72,7 @@ export default class App{
         blending: THREE.AdditiveBlending,
         depthTest:false,
         transparent: true,
+        side:THREE.DoubleSide,
       } );
       linesMesh = new THREE.Mesh(geometry,material);
       {
