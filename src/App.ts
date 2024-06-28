@@ -37,18 +37,96 @@ export default class App{
     renderer.setAnimationLoop( animate );
     this.sectionElement.appendChild( renderer.domElement );
     
-    const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-    const cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
+
+
+    let linesMesh:THREE.LineSegments;
+    {
+      const geometry=new THREE.BufferGeometry();
+      const segments = this.points.length * this.points.length;
+      const positions = new Float32Array( segments * 3 );
+      const colors = new Float32Array( segments * 3 );      
+      geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ).setUsage( THREE.DynamicDrawUsage ) );
+      geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3 ).setUsage( THREE.DynamicDrawUsage ) );
+
+      geometry.computeBoundingSphere();
+      geometry.setDrawRange( 0, 0 );
+
+
+      const material = new THREE.LineBasicMaterial( {
+        vertexColors: true,
+        // color:0xffffff,
+        blending: THREE.AdditiveBlending,
+        transparent: true,
+      } );
+      linesMesh = new THREE.LineSegments(geometry,material);
+      linesMesh.userData={
+        positions,
+        colors,
+      };
+      scene.add(linesMesh);
+    }
     
     camera.position.z = 5;
     
+    const box=new THREE.Box3(new THREE.Vector3(-3,-3,0),new THREE.Vector3(3,3,0));
+    const vList=this.points.map((point)=>{
+      const v=new THREE.Vector3(
+        THREE.MathUtils.mapLinear(point.lng,this.min.lng,this.max.lng,box.min.x,box.max.x),
+        THREE.MathUtils.mapLinear(point.lat,this.min.lat,this.max.lat,box.min.y,box.max.y),
+        0
+      );
+      return v;
+    });
+
     function animate() {
     
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
-    
+
+      const {
+        positions,
+        colors,
+      }=linesMesh.userData as {
+        positions:Float32Array,
+        colors:Float32Array,
+      };
+
+      let vertexpos = 0;
+      let colorpos = 0;
+      let numConnected = 0;
+
+      const vDiff=new THREE.Vector3();
+      const minDistance=(box.max.x - box.min.x)*0.05;
+      for(let vFrom of vList){
+        for(let vTo of vList){
+          if(vFrom===vTo){
+            continue;
+          }
+          vDiff.x=vTo.x-vFrom.x;
+          vDiff.y=vTo.y-vFrom.y;
+          vDiff.z=vTo.z-vFrom.z;
+          if(vDiff.lengthSq()<minDistance*minDistance){
+            positions[vertexpos++]=vFrom.x;
+            positions[vertexpos++]=vFrom.y;
+            positions[vertexpos++]=vFrom.z;
+            positions[vertexpos++]=vTo.x;
+            positions[vertexpos++]=vTo.y;
+            positions[vertexpos++]=vTo.z;
+            colors[colorpos++]=0.25;
+            colors[colorpos++]=0.25;
+            colors[colorpos++]=0.25;
+            colors[colorpos++]=0.25;
+            colors[colorpos++]=0.25;
+            colors[colorpos++]=0.25;
+            numConnected++;
+          }
+
+        }
+      }
+
+      linesMesh.geometry.setDrawRange( 0, numConnected * 2 );
+      linesMesh.geometry.attributes.position.needsUpdate = true;
+      linesMesh.geometry.attributes.color.needsUpdate = true;
+      linesMesh.computeLineDistances();
+  
       renderer.render( scene, camera );
     
     }
