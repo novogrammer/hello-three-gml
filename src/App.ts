@@ -166,6 +166,7 @@ export default class App{
         // linesMesh.computeLineDistances();
         // console.log(numConnected/vList.length);
   
+        geometry.computeBoundingSphere();
       }
       material.onBeforeCompile=(shader)=>{
         linesMeshShader=shader;
