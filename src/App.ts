@@ -146,7 +146,7 @@ export default class App{
       linesMesh.geometry.setDrawRange( 0, numConnected * 2 );
       linesMesh.geometry.attributes.position.needsUpdate = true;
       linesMesh.geometry.attributes.color.needsUpdate = true;
-      linesMesh.computeLineDistances();
+      // linesMesh.computeLineDistances();
   
       renderer.render( scene, camera );
       this.stats.end();
