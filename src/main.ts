@@ -17,7 +17,7 @@ async function mainAsync(){
       ignoreAttributes:false,
     });
     const obj=parser.parse(xmlData);
-    // console.log(obj);
+    console.log(obj);
     const subpoints:LatLng[]=obj?.["ksj:Dataset"]?.["gml:Point"]?.map((element:any)=>element?.["gml:pos"]).filter((point?:string)=>!!point).map((point:string)=>{
       const [lat,lng]=point.split(" ");
       return {

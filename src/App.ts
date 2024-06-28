@@ -50,12 +50,15 @@ export default class App{
     let linesMesh:THREE.Mesh;
     // const segments = this.points.length * this.points.length;
     const segments = this.points.length * 30;
+    let linesMeshShader:THREE.WebGLProgramParametersWithUniforms|null=null;
     {
       const geometry=new THREE.BufferGeometry();
       const positions = new Float32Array( segments * 6 * 3 );
-      const colors = new Float32Array( segments * 6 * 3 );      
+      const colors = new Float32Array( segments * 6 * 3 );
+      const uvs = new Float32Array(segments * 6 * 2);
       geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ).setUsage( THREE.DynamicDrawUsage ) );
       geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3 ).setUsage( THREE.DynamicDrawUsage ) );
+      geometry.setAttribute( 'uv', new THREE.BufferAttribute( uvs, 2 ).setUsage( THREE.DynamicDrawUsage ) );
 
       geometry.computeBoundingSphere();
       geometry.setDrawRange( 0, 0 );
@@ -71,7 +74,23 @@ export default class App{
       linesMesh.userData={
         positions,
         colors,
+        uvs,
       };
+      material.onBeforeCompile=(shader)=>{
+        linesMeshShader=shader;
+        shader.uniforms["uTime"]={value:0};
+        shader.vertexShader="#define USE_UV\n"+shader.vertexShader;
+        shader.fragmentShader="#define USE_UV\n"+shader.fragmentShader;
+        shader.fragmentShader=shader.fragmentShader.replace("#include <dithering_pars_fragment>",
+`#include <dithering_pars_fragment>
+uniform float uTime;
+`).replace("#include <dithering_fragment>",
+`#include <dithering_fragment>
+float r=sin(mod(uTime,1.0)*90.0*PI/180.0);
+gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
+`)
+        console.log(shader);
+      }
       scene.add(linesMesh);
     }
     
@@ -102,20 +121,24 @@ export default class App{
       const {
         positions,
         colors,
+        uvs,
       }=linesMesh.userData as {
         positions:Float32Array,
         colors:Float32Array,
+        uvs:Float32Array,
       };
 
       let vertexpos = 0;
       let colorpos = 0;
+      let uvpos=0;
       let numConnected = 0;
 
       const vDiff=new THREE.Vector3();
       const vCamera=new THREE.Vector3(0,0,1);
-      const lineWidth=0.02;
+      const lineWidth=0.03;
       const vSide=new THREE.Vector3();
       const minDistance=(box.max.x - box.min.x)*0.05;
+      const color=new THREE.Color(1,1,1);
       for(let vFrom of vList){
         for(let vTo of vList){
           if(vFrom===vTo){
@@ -147,30 +170,26 @@ export default class App{
             positions[vertexpos++]=vFrom.x+vSide.x;
             positions[vertexpos++]=vFrom.y+vSide.y;
             positions[vertexpos++]=vFrom.z+vSide.z;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
-            colors[colorpos++]=1/16;
+            color.setHSL(numConnected/6,1,0.5);
+            for(let i=0;i<6;i++){
+              colors[colorpos++]=color.r;
+              colors[colorpos++]=color.g;
+              colors[colorpos++]=color.b;
+            }
+            uvs[uvpos++]=0;
+            uvs[uvpos++]=0;
+            uvs[uvpos++]=0;
+            uvs[uvpos++]=1;
+            uvs[uvpos++]=1;
+            uvs[uvpos++]=1;
+
+            uvs[uvpos++]=1;
+            uvs[uvpos++]=1;
+            uvs[uvpos++]=1;
+            uvs[uvpos++]=0;
+            uvs[uvpos++]=0;
+            uvs[uvpos++]=0;
+
             numConnected++;
           }
 
@@ -180,6 +199,10 @@ export default class App{
       linesMesh.geometry.setDrawRange( 0, numConnected * 6 );
       linesMesh.geometry.attributes.position.needsUpdate = true;
       linesMesh.geometry.attributes.color.needsUpdate = true;
+      linesMesh.geometry.attributes.uv.needsUpdate = true;
+      if(linesMeshShader){
+        linesMeshShader.uniforms["uTime"].value=performance.now()/1000;
+      }
       // linesMesh.computeLineDistances();
   
       renderer.render( scene, camera );
