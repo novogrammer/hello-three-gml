@@ -48,8 +48,8 @@ export default class App{
 
 
     let linesMesh:THREE.LineSegments;
-    const segments = this.points.length * this.points.length;
-    // const segments = this.points.length * 10;
+    // const segments = this.points.length * this.points.length;
+    const segments = this.points.length * 30;
     {
       const geometry=new THREE.BufferGeometry();
       const positions = new Float32Array( segments * 3 );
