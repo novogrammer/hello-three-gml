@@ -47,13 +47,13 @@ export default class App{
     
 
 
-    let linesMesh:THREE.LineSegments;
+    let linesMesh:THREE.Mesh;
     // const segments = this.points.length * this.points.length;
     const segments = this.points.length * 30;
     {
       const geometry=new THREE.BufferGeometry();
-      const positions = new Float32Array( segments * 2 * 3 );
-      const colors = new Float32Array( segments * 2 * 3 );      
+      const positions = new Float32Array( segments * 6 * 3 );
+      const colors = new Float32Array( segments * 6 * 3 );      
       geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ).setUsage( THREE.DynamicDrawUsage ) );
       geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3 ).setUsage( THREE.DynamicDrawUsage ) );
 
@@ -61,13 +61,13 @@ export default class App{
       geometry.setDrawRange( 0, 0 );
 
 
-      const material = new THREE.LineBasicMaterial( {
+      const material = new THREE.MeshBasicMaterial( {
         vertexColors: true,
         // color:0xffffff,
         blending: THREE.AdditiveBlending,
         transparent: true,
       } );
-      linesMesh = new THREE.LineSegments(geometry,material);
+      linesMesh = new THREE.Mesh(geometry,material);
       linesMesh.userData={
         positions,
         colors,
@@ -112,6 +112,9 @@ export default class App{
       let numConnected = 0;
 
       const vDiff=new THREE.Vector3();
+      const vCamera=new THREE.Vector3(0,0,1);
+      const lineWidth=0.02;
+      const vSide=new THREE.Vector3();
       const minDistance=(box.max.x - box.min.x)*0.05;
       for(let vFrom of vList){
         for(let vTo of vList){
@@ -125,12 +128,43 @@ export default class App{
           vDiff.y=vTo.y-vFrom.y;
           vDiff.z=vTo.z-vFrom.z;
           if(vDiff.lengthSq()<minDistance*minDistance){
-            positions[vertexpos++]=vFrom.x;
-            positions[vertexpos++]=vFrom.y;
-            positions[vertexpos++]=vFrom.z;
-            positions[vertexpos++]=vTo.x;
-            positions[vertexpos++]=vTo.y;
-            positions[vertexpos++]=vTo.z;
+            vSide.crossVectors(vCamera,vDiff).normalize().multiplyScalar(lineWidth*0.5);
+            positions[vertexpos++]=vFrom.x+vSide.x;
+            positions[vertexpos++]=vFrom.y+vSide.y;
+            positions[vertexpos++]=vFrom.z+vSide.z;
+            positions[vertexpos++]=vFrom.x-vSide.x;
+            positions[vertexpos++]=vFrom.y-vSide.y;
+            positions[vertexpos++]=vFrom.z-vSide.z;
+            positions[vertexpos++]=vTo.x-vSide.x;
+            positions[vertexpos++]=vTo.y-vSide.y;
+            positions[vertexpos++]=vTo.z-vSide.z;
+            positions[vertexpos++]=vTo.x-vSide.x;
+            positions[vertexpos++]=vTo.y-vSide.y;
+            positions[vertexpos++]=vTo.z-vSide.z;
+            positions[vertexpos++]=vTo.x+vSide.x;
+            positions[vertexpos++]=vTo.y+vSide.y;
+            positions[vertexpos++]=vTo.z+vSide.z;
+            positions[vertexpos++]=vFrom.x+vSide.x;
+            positions[vertexpos++]=vFrom.y+vSide.y;
+            positions[vertexpos++]=vFrom.z+vSide.z;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
             colors[colorpos++]=1/16;
             colors[colorpos++]=1/16;
             colors[colorpos++]=1/16;
@@ -143,7 +177,7 @@ export default class App{
         }
       }
 
-      linesMesh.geometry.setDrawRange( 0, numConnected * 2 );
+      linesMesh.geometry.setDrawRange( 0, numConnected * 6 );
       linesMesh.geometry.attributes.position.needsUpdate = true;
       linesMesh.geometry.attributes.color.needsUpdate = true;
       // linesMesh.computeLineDistances();
