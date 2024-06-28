@@ -52,8 +52,8 @@ export default class App{
     const segments = this.points.length * 30;
     {
       const geometry=new THREE.BufferGeometry();
-      const positions = new Float32Array( segments * 3 );
-      const colors = new Float32Array( segments * 3 );      
+      const positions = new Float32Array( segments * 2 * 3 );
+      const colors = new Float32Array( segments * 2 * 3 );      
       geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ).setUsage( THREE.DynamicDrawUsage ) );
       geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3 ).setUsage( THREE.DynamicDrawUsage ) );
 
@@ -118,7 +118,7 @@ export default class App{
           if(vFrom===vTo){
             continue;
           }
-          if(segments<numConnected){
+          if(segments<numConnected * 2){
             continue;
           }
           vDiff.x=vTo.x-vFrom.x;
