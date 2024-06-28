@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { getElementSize } from "./dom_utils";
 
 export interface LatLng{
   lat:number,
@@ -29,11 +30,14 @@ export default class App{
         lng:Math.max(a.lng,b.lng),
       }
     })
+
+    const {width,height}=getElementSize(this.sectionElement);
+
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
     
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( width, height );
     renderer.setAnimationLoop( animate );
     this.sectionElement.appendChild( renderer.domElement );
     
@@ -77,6 +81,15 @@ export default class App{
       );
       return v;
     });
+
+    const onResize=()=>{
+      const {width,height}=getElementSize(this.sectionElement);
+      renderer.setSize(width,height);
+      camera.aspect=width/height;
+      camera.updateProjectionMatrix();
+    }
+    window.addEventListener("resize",onResize);
+    onResize();
 
     function animate() {
     
@@ -131,5 +144,6 @@ export default class App{
     
     }
   }
+  
 
 }
