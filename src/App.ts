@@ -59,9 +59,9 @@ export default class App{
       const positions = new Float32Array( segments * 6 * 3 );
       const colors = new Float32Array( segments * 6 * 3 );
       const uvs = new Float32Array(segments * 6 * 2);
-      geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ).setUsage( THREE.DynamicDrawUsage ) );
-      geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3 ).setUsage( THREE.DynamicDrawUsage ) );
-      geometry.setAttribute( 'uv', new THREE.BufferAttribute( uvs, 2 ).setUsage( THREE.DynamicDrawUsage ) );
+      geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ).setUsage( THREE.StaticDrawUsage ) );
+      geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3 ).setUsage( THREE.StaticDrawUsage ) );
+      geometry.setAttribute( 'uv', new THREE.BufferAttribute( uvs, 2 ).setUsage( THREE.StaticDrawUsage ) );
 
       geometry.computeBoundingSphere();
       geometry.setDrawRange( 0, 0 );
