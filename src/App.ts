@@ -8,6 +8,10 @@ export interface LatLng{
   lng:number,
 }
 
+const tooClose=0.01;
+const minDistance=0.10;
+
+
 export default class App{
   sectionElement:HTMLElement;
   controls:TrackballControls;
@@ -52,7 +56,7 @@ export default class App{
 
     let linesMesh:THREE.Mesh;
     // const segments = this.points.length * this.points.length;
-    const segments = this.points.length * 100 * 2;
+    const segments = this.points.length * 30 * 2;
     let linesMeshShader:THREE.WebGLProgramParametersWithUniforms|null=null;
     {
       const geometry=new THREE.BufferGeometry();
@@ -84,7 +88,15 @@ export default class App{
             0
           );
           return v;
-        });
+        }).reduce((arr:THREE.Vector3[],p)=>{
+          if(!arr.some((e)=>{
+            return p.clone().sub(e).lengthSq()<tooClose*tooClose;
+          })){
+            arr.push(p);
+          }
+          return arr;
+        },[]);
+        console.log(vList.length);
     
         let vertexpos = 0;
         let colorpos = 0;
@@ -95,14 +107,13 @@ export default class App{
         const vCamera=new THREE.Vector3(0,0,1);
         const lineWidth=0.01;
         const vSide=new THREE.Vector3();
-        const minDistance=(box.max.x - box.min.x)*0.015;
         const colorList:THREE.Color[]=[];
         for(let i=0;i<6;i++){
           const color = new THREE.Color();
           color.setHSL(i/6,1,0.5);
           colorList.push(color);
         }
-        new THREE.Color(1,1,1);
+
         for(let vFrom of vList){
           for(let vTo of vList){
             if(vFrom===vTo){
@@ -165,7 +176,8 @@ export default class App{
         linesMesh.geometry.attributes.color.needsUpdate = true;
         linesMesh.geometry.attributes.uv.needsUpdate = true;
         // linesMesh.computeLineDistances();
-        // console.log(numConnected/vList.length);
+        console.log(numConnected);
+        console.log(numConnected/vList.length);
   
         geometry.computeBoundingSphere();
       }
@@ -182,7 +194,7 @@ uniform float uTime;
 float r=sin(mod(uTime,1.0)*90.0*PI/180.0);
 gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
 `)
-        console.log(shader);
+        // console.log(shader);
       }
       scene.add(linesMesh);
     }
