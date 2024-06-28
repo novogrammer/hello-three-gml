@@ -10,14 +10,17 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 async function mainAsync(){
   const points=[];
-  const gmlUrlList=["./P34-14_01.xml","./P34-14_02.xml"];
+  const gmlUrlList=[];
+  for(let code=1;code<=47;code+=1){
+    gmlUrlList.push(`./P34-14_${("0"+code).slice(-2)}.xml`);
+  }
   for(let gmlUrl of gmlUrlList){
     const xmlData = await fetch(gmlUrl).then((res)=>res.text());
     const parser = new XMLParser({
       ignoreAttributes:false,
     });
     const obj=parser.parse(xmlData);
-    console.log(obj);
+    // console.log(obj);
     const subpoints:LatLng[]=obj?.["ksj:Dataset"]?.["gml:Point"]?.map((element:any)=>element?.["gml:pos"]).filter((point?:string)=>!!point).map((point:string)=>{
       const [lat,lng]=point.split(" ");
       return {

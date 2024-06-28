@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ksj:Dataset gml:id="P34Dataset" xmlns:ksj="http://nlftp.mlit.go.jp/ksj/schemas/ksj-app" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nlftp.mlit.go.jp/ksj/schemas/ksj-app KsjAppSchema-P34-v2_0.xsd">
+<gml:description>国土数値情報（市町村役場）データ　2014年度</gml:description>
+<!-- データ提供範囲 -->
+<gml:boundedBy>
+	<gml:EnvelopeWithTimePeriod srsName="JGD2000 / (B, L)" frame="GC / JST">
+		<gml:lowerCorner>20.0 123.0</gml:lowerCorner>
+		<gml:upperCorner>46.0 154.0</gml:upperCorner>
+		<gml:beginPosition calendarEraName="西暦">1900</gml:beginPosition>
+		<gml:endPosition indeterminatePosition="unknown"/>
+	</gml:EnvelopeWithTimePeriod>
+</gml:boundedBy>
+<gml:Point gml:id="p1">
+	<gml:pos>32.75031100 129.87790600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p2">
+	<gml:pos>32.68800600 129.80970400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p3">
+	<gml:pos>32.70415800 129.77857000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p4">
+	<gml:pos>32.66095200 129.75552900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p5">
+	<gml:pos>32.58150357 129.75943922</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p6">
+	<gml:pos>32.88037600 129.67979800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p7">
+	<gml:pos>32.65156422 129.82815115</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p8">
+	<gml:pos>32.90946900 129.78414100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p9">
+	<gml:pos>32.70561400 129.84956100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p10">
+	<gml:pos>32.68502400 129.84318500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p11">
+	<gml:pos>32.72524500 129.83559500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p12">
+	<gml:pos>32.78983700 129.86194800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p13">
+	<gml:pos>32.80750100 129.83577000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p14">
+	<gml:pos>32.74607100 129.82069300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p15">
+	<gml:pos>32.68537900 129.82401600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p16">
+	<gml:pos>32.75818900 129.94343400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p17">
+	<gml:pos>32.70782900 129.91225200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p18">
+	<gml:pos>32.78686200 129.79208100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p19">
+	<gml:pos>32.77564300 129.95147700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p20">
+	<gml:pos>32.82519500 129.74749300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p21">
+	<gml:pos>32.77855900 129.80167700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p22">
+	<gml:pos>32.80029600 129.95868200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p23">
+	<gml:pos>32.76621200 129.98017300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p24">
+	<gml:pos>32.56633000 129.78650600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p25">
+	<gml:pos>32.60561500 129.78524100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p26">
+	<gml:pos>32.58040100 129.77770600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p27">
+	<gml:pos>32.83701500 129.70866000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p28">
+	<gml:pos>32.88384700 129.59964900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p29">
+	<gml:pos>32.86510300 129.78733700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p30">
+	<gml:pos>33.17990418 129.71509009</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p31">
+	<gml:pos>33.13662100 129.79741500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p32">
+	<gml:pos>33.08687700 129.81477300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p33">
+	<gml:pos>33.07775600 129.75614700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p34">
+	<gml:pos>33.10856000 129.78342200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p35">
+	<gml:pos>33.15269900 129.82924800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p36">
+	<gml:pos>33.15780700 129.75852100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p37">
+	<gml:pos>33.21040300 129.76416400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p38">
+	<gml:pos>33.20851300 129.72116500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p39">
+	<gml:pos>33.21069300 129.69561400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p40">
+	<gml:pos>33.19488600 129.66695600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p41">
+	<gml:pos>33.14179000 129.53448500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p42">
+	<gml:pos>33.26875100 129.68691800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p43">
+	<gml:pos>33.25772200 129.75163900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p44">
+	<gml:pos>33.26233700 129.13089000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p45">
+	<gml:pos>33.21500200 129.59898800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p46">
+	<gml:pos>33.30936200 129.62887800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p47">
+	<gml:pos>33.27349000 129.59003200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p48">
+	<gml:pos>32.78812000 130.37052600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p49">
+	<gml:pos>32.84961400 130.33604400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p50">
+	<gml:pos>32.81625800 130.35041700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p51">
+	<gml:pos>32.84420800 130.05360100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p52">
+	<gml:pos>32.83180700 129.98343400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p53">
+	<gml:pos>32.83238100 130.12875600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p54">
+	<gml:pos>32.78134700 130.02369400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p55">
+	<gml:pos>32.90843900 130.14102600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p56">
+	<gml:pos>32.92738600 130.18973800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p57">
+	<gml:pos>32.83055800 130.05383500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p58">
+	<gml:pos>32.83496900 130.09646900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p59">
+	<gml:pos>32.79474600 130.08044800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p60">
+	<gml:pos>32.84610900 130.02431900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p61">
+	<gml:pos>32.83531000 130.01877300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p62">
+	<gml:pos>32.88842300 130.02368700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p63">
+	<gml:pos>32.86312600 130.07681800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p64">
+	<gml:pos>32.84615000 129.95412200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p65">
+	<gml:pos>32.85864000 129.92804600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p66">
+	<gml:pos>32.76883100 129.99616300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p67">
+	<gml:pos>32.88891600 130.11048800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p68">
+	<gml:pos>32.89996000 129.95821700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p69">
+	<gml:pos>32.86253600 129.98791500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p70">
+	<gml:pos>32.88941600 129.99215000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p71">
+	<gml:pos>32.92217100 129.95216900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p72">
+	<gml:pos>32.95253900 130.00437300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p73">
+	<gml:pos>32.94343900 129.94707400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p74">
+	<gml:pos>32.96048400 129.94802100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p75">
+	<gml:pos>32.97594100 129.94490700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p76">
+	<gml:pos>33.36806500 129.55367100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p77">
+	<gml:pos>33.38648200 129.43065100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p78">
+	<gml:pos>33.35927400 129.58841400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p79">
+	<gml:pos>33.47955400 129.55468200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p80">
+	<gml:pos>33.28855800 129.47133400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p81">
+	<gml:pos>33.21865500 129.42539800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p82">
+	<gml:pos>33.36140700 129.43219900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p83">
+	<gml:pos>33.43249400 129.51611100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p84">
+	<gml:pos>33.34102300 129.70904700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p85">
+	<gml:pos>33.36704800 129.82003400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p86">
+	<gml:pos>33.43405400 129.75589400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p87">
+	<gml:pos>33.36411400 129.66471800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p88">
+	<gml:pos>33.35151800 129.76557300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p89">
+	<gml:pos>33.30807200 129.72868900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p90">
+	<gml:pos>33.34784300 129.72845700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p91">
+	<gml:pos>34.20264300 129.28751800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p92">
+	<gml:pos>34.12177000 129.18325400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p93">
+	<gml:pos>34.23260300 129.19361900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p94">
+	<gml:pos>34.45736700 129.36876900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p95">
+	<gml:pos>34.53363800 129.34960000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p96">
+	<gml:pos>34.55462600 129.45438200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p97">
+	<gml:pos>33.74997800 129.69137700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p98">
+	<gml:pos>33.84879000 129.69276600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p99">
+	<gml:pos>33.80209800 129.76272200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p100">
+	<gml:pos>33.74778800 129.75393100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p101">
+	<gml:pos>33.80483100 129.69012200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p102">
+	<gml:pos>33.79036100 129.72135800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p103">
+	<gml:pos>33.81726800 129.75516900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p104">
+	<gml:pos>32.69554100 128.84081500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p105">
+	<gml:pos>32.61460130 128.76650027</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p106">
+	<gml:pos>32.63420000 128.61991500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p107">
+	<gml:pos>32.74288100 128.69017500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p108">
+	<gml:pos>32.75017800 128.76011000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p109">
+	<gml:pos>32.82942900 128.93540000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p110">
+	<gml:pos>32.74254700 128.82418700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p111">
+	<gml:pos>32.65220500 128.87728400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p112">
+	<gml:pos>32.66881400 128.82139400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p113">
+	<gml:pos>32.65317300 128.81195900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p114">
+	<gml:pos>32.76994900 128.99210100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p115">
+	<gml:pos>32.79379800 128.87102700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p116">
+	<gml:pos>32.75342800 128.97002500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p117">
+	<gml:pos>32.93311700 129.64296200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p118">
+	<gml:pos>32.99497600 129.75668500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p119">
+	<gml:pos>33.06512100 129.68909500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p120">
+	<gml:pos>33.03551300 129.61960300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p121">
+	<gml:pos>33.02223600 129.57024200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p122">
+	<gml:pos>32.93986800 129.61502900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p123">
+	<gml:pos>33.00481200 129.34830500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p124">
+	<gml:pos>33.00016600 129.23866300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p125">
+	<gml:pos>32.83521400 130.18750800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p126">
+	<gml:pos>32.87435800 130.30233400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p127">
+	<gml:pos>32.86714900 130.23960000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p128">
+	<gml:pos>32.81678800 130.15529400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p129">
+	<gml:pos>32.78378300 130.20210900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p130">
+	<gml:pos>32.72990200 130.20649300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p131">
+	<gml:pos>32.67708600 130.14588800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p132">
+	<gml:pos>32.74131700 130.25821000</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p133">
+	<gml:pos>32.65971600 130.29778300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p134">
+	<gml:pos>32.71850100 130.35361200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p135">
+	<gml:pos>32.69030100 130.35513500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p136">
+	<gml:pos>32.66571000 130.30511900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p137">
+	<gml:pos>32.65577400 130.24802100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p138">
+	<gml:pos>32.63057900 130.24689400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p139">
+	<gml:pos>32.61069900 130.18489700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p140">
+	<gml:pos>32.63128800 130.15923900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p141">
+	<gml:pos>32.82517000 129.87507100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p142">
+	<gml:pos>32.82888500 129.84852700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p143">
+	<gml:pos>33.03703100 129.91714900</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p144">
+	<gml:pos>33.01346800 129.94925100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p145">
+	<gml:pos>33.07267900 129.86156200</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p146">
+	<gml:pos>33.13789000 129.89554800</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p147">
+	<gml:pos>33.19107400 129.05876600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p148">
+	<gml:pos>33.23842600 129.65035300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p149">
+	<gml:pos>32.98455300 129.07340100</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p150">
+	<gml:pos>32.98319300 129.11635500</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p151">
+	<gml:pos>33.00203700 129.08949700</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p152">
+	<gml:pos>32.88792700 129.02133300</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p153">
+	<gml:pos>32.83989200 129.06084400</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p154">
+	<gml:pos>33.06190400 129.10461600</gml:pos>
+</gml:Point>
+<gml:Point gml:id="p155">
+	<gml:pos>33.13684900 129.69802300</gml:pos>
+</gml:Point>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_1">
+	<ksj:position xlink:href="#p1"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>長崎市役所</ksj:publicOfficeName>
+	<ksj:address>長崎市桜町2-22</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_2">
+	<ksj:position xlink:href="#p2"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>香焼行政センター</ksj:publicOfficeName>
+	<ksj:address>長崎市香焼町1070-32</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_3">
+	<ksj:position xlink:href="#p3"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>伊王島行政センター</ksj:publicOfficeName>
+	<ksj:address>長崎市伊王島町1-甲3271</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_4">
+	<ksj:position xlink:href="#p4"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>高島行政センター</ksj:publicOfficeName>
+	<ksj:address>長崎市高島町1728-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_5">
+	<ksj:position xlink:href="#p5"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>野母崎行政センター</ksj:publicOfficeName>
+	<ksj:address>長崎市野母町1665</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_6">
+	<ksj:position xlink:href="#p6"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>外海行政センター</ksj:publicOfficeName>
+	<ksj:address>長崎市神浦江川町657-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_7">
+	<ksj:position xlink:href="#p7"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>三和行政センター</ksj:publicOfficeName>
+	<ksj:address>長崎市布巻町111-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_8">
+	<ksj:position xlink:href="#p8"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>琴海行政センター</ksj:publicOfficeName>
+	<ksj:address>長崎市長浦町2664</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_9">
+	<ksj:position xlink:href="#p9"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小ヶ倉支所</ksj:publicOfficeName>
+	<ksj:address>長崎市小ヶ倉町2-21-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_10">
+	<ksj:position xlink:href="#p10"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>土井首支所</ksj:publicOfficeName>
+	<ksj:address>長崎市柳田町45-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_11">
+	<ksj:position xlink:href="#p11"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小榊支所</ksj:publicOfficeName>
+	<ksj:address>長崎市小瀬戸町1015-7</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_12">
+	<ksj:position xlink:href="#p12"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>西浦上支所</ksj:publicOfficeName>
+	<ksj:address>長崎市千歳町5-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_13">
+	<ksj:position xlink:href="#p13"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>滑石事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市滑石5-1-44</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_14">
+	<ksj:position xlink:href="#p14"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>福田支所</ksj:publicOfficeName>
+	<ksj:address>長崎市福田本町10</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_15">
+	<ksj:position xlink:href="#p15"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>深堀支所</ksj:publicOfficeName>
+	<ksj:address>長崎市深堀町5-182</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_16">
+	<ksj:position xlink:href="#p16"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>日見支所</ksj:publicOfficeName>
+	<ksj:address>長崎市界2-1-19</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_17">
+	<ksj:position xlink:href="#p17"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>茂木支所</ksj:publicOfficeName>
+	<ksj:address>長崎市茂木町75-10</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_18">
+	<ksj:position xlink:href="#p18"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>式見支所</ksj:publicOfficeName>
+	<ksj:address>長崎市式見町357</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_19">
+	<ksj:position xlink:href="#p19"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>東長崎支所</ksj:publicOfficeName>
+	<ksj:address>長崎市矢上町19-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_20">
+	<ksj:position xlink:href="#p20"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>三重支所</ksj:publicOfficeName>
+	<ksj:address>長崎市三重町1098-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_21">
+	<ksj:position xlink:href="#p21"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>西部地区事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市手熊町390-5</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_22">
+	<ksj:position xlink:href="#p22"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>古賀地区事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市古賀町948-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_23">
+	<ksj:position xlink:href="#p23"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>戸石地区事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市戸石町1740</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_24">
+	<ksj:position xlink:href="#p24"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>樺島連絡員事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市野母崎樺島町307</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_25">
+	<ksj:position xlink:href="#p25"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>高浜連絡員事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市高浜町3203-73</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_26">
+	<ksj:position xlink:href="#p26"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>脇岬連絡員事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市脇岬町3309</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_27">
+	<ksj:position xlink:href="#p27"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>黒崎事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市下黒崎町1914</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_28">
+	<ksj:position xlink:href="#p28"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>池島事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市池島町911-6</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_29">
+	<ksj:position xlink:href="#p29"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42201</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>村松事務所</ksj:publicOfficeName>
+	<ksj:address>長崎市琴海村松町703-14</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_30">
+	<ksj:position xlink:href="#p30"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>佐世保市役所</ksj:publicOfficeName>
+	<ksj:address>佐世保市八幡町1-10</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_31">
+	<ksj:position xlink:href="#p31"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>早岐支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市早岐1-6-38</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_32">
+	<ksj:position xlink:href="#p32"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>宮支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市城間町345</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_33">
+	<ksj:position xlink:href="#p33"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>針尾支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市針尾中町1538-5</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_34">
+	<ksj:position xlink:href="#p34"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>江上支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市指方町1759</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_35">
+	<ksj:position xlink:href="#p35"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>三川内支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市三川内本町289-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_36">
+	<ksj:position xlink:href="#p36"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>日宇支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市日宇町675-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_37">
+	<ksj:position xlink:href="#p37"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>柚木支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市柚木町2088-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_38">
+	<ksj:position xlink:href="#p38"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>大野支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市田原町13-29</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_39">
+	<ksj:position xlink:href="#p39"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>中里皆瀬支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市上本山町1228-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_40">
+	<ksj:position xlink:href="#p40"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>相浦支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市木宮町3-10</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_41">
+	<ksj:position xlink:href="#p41"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>黒島支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市黒島町3175</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_42">
+	<ksj:position xlink:href="#p42"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>吉井支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市吉井町立石457-5</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_43">
+	<ksj:position xlink:href="#p43"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>世知原支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市世知原町栗迎246-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_44">
+	<ksj:position xlink:href="#p44"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>九十九連絡所</ksj:publicOfficeName>
+	<ksj:address>佐世保市下船越町306-7</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_45">
+	<ksj:position xlink:href="#p45"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小佐々支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市小佐々町西川内172-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_46">
+	<ksj:position xlink:href="#p46"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>江迎支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市江迎町長坂263</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_47">
+	<ksj:position xlink:href="#p47"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>鹿町支所</ksj:publicOfficeName>
+	<ksj:address>佐世保市鹿町町下歌ヶ浦290-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_48">
+	<ksj:position xlink:href="#p48"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42203</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>島原市役所</ksj:publicOfficeName>
+	<ksj:address>島原市上の町537</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_49">
+	<ksj:position xlink:href="#p49"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42203</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>有明支所</ksj:publicOfficeName>
+	<ksj:address>島原市有明町大三東戊1327</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_50">
+	<ksj:position xlink:href="#p50"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42203</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>三会出張所</ksj:publicOfficeName>
+	<ksj:address>島原市中原町乙1935-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_51">
+	<ksj:position xlink:href="#p51"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>諫早市役所</ksj:publicOfficeName>
+	<ksj:address>諫早市東小路町7-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_52">
+	<ksj:position xlink:href="#p52"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>多良見支所</ksj:publicOfficeName>
+	<ksj:address>諫早市多良見町化屋1800</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_53">
+	<ksj:position xlink:href="#p53"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>森山支所</ksj:publicOfficeName>
+	<ksj:address>諫早市森山町本村1300</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_54">
+	<ksj:position xlink:href="#p54"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>飯盛支所</ksj:publicOfficeName>
+	<ksj:address>諫早市飯盛町開1929-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_55">
+	<ksj:position xlink:href="#p55"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>高来支所</ksj:publicOfficeName>
+	<ksj:address>諫早市高来町三部壱528</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_56">
+	<ksj:position xlink:href="#p56"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小長井支所</ksj:publicOfficeName>
+	<ksj:address>諫早市小長井町小川原浦500</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_57">
+	<ksj:position xlink:href="#p57"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小栗出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市小川町1222</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_58">
+	<ksj:position xlink:href="#p58"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小野出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市黒崎町181-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_59">
+	<ksj:position xlink:href="#p59"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>有喜出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市有喜町488</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_60">
+	<ksj:position xlink:href="#p60"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>真津山出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市山川町1-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_61">
+	<ksj:position xlink:href="#p61"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>真津山出張所分室</ksj:publicOfficeName>
+	<ksj:address>諫早市貝津町2890</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_62">
+	<ksj:position xlink:href="#p62"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>本野出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市上大渡野町2-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_63">
+	<ksj:position xlink:href="#p63"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>長田出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市長田町2394-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_64">
+	<ksj:position xlink:href="#p64"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>大草出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市多良見町野副17-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_65">
+	<ksj:position xlink:href="#p65"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>伊木力出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市多良見町舟津1140</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_66">
+	<ksj:position xlink:href="#p66"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>田結出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市飯盛町里648-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_67">
+	<ksj:position xlink:href="#p67"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42204</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小江深海出張所</ksj:publicOfficeName>
+	<ksj:address>諫早市高来町峰19-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_68">
+	<ksj:position xlink:href="#p68"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>大村市役所</ksj:publicOfficeName>
+	<ksj:address>大村市玖島1-25</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_69">
+	<ksj:position xlink:href="#p69"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>三浦出張所</ksj:publicOfficeName>
+	<ksj:address>大村市日泊町791</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_70">
+	<ksj:position xlink:href="#p70"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>鈴田出張所</ksj:publicOfficeName>
+	<ksj:address>大村市大里町33-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_71">
+	<ksj:position xlink:href="#p71"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>西大村出張所</ksj:publicOfficeName>
+	<ksj:address>大村市松並1-246-5</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_72">
+	<ksj:position xlink:href="#p72"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>萱瀬出張所</ksj:publicOfficeName>
+	<ksj:address>大村市田下町1577</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_73">
+	<ksj:position xlink:href="#p73"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>竹松出張所</ksj:publicOfficeName>
+	<ksj:address>大村市大川田町417-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_74">
+	<ksj:position xlink:href="#p74"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>福重出張所</ksj:publicOfficeName>
+	<ksj:address>大村市皆同町512-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_75">
+	<ksj:position xlink:href="#p75"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42205</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>松原出張所</ksj:publicOfficeName>
+	<ksj:address>大村市松原本町296-4</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_76">
+	<ksj:position xlink:href="#p76"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>平戸市役所</ksj:publicOfficeName>
+	<ksj:address>平戸市岩の上町1508-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_77">
+	<ksj:position xlink:href="#p77"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>生月支所</ksj:publicOfficeName>
+	<ksj:address>平戸市生月町里免1660</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_78">
+	<ksj:position xlink:href="#p78"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>田平支所</ksj:publicOfficeName>
+	<ksj:address>平戸市田平町里免27-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_79">
+	<ksj:position xlink:href="#p79"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>大島支所</ksj:publicOfficeName>
+	<ksj:address>平戸市大島村前平1840-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_80">
+	<ksj:position xlink:href="#p80"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>中部出張所</ksj:publicOfficeName>
+	<ksj:address>平戸市紐差町678-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_81">
+	<ksj:position xlink:href="#p81"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>南部出張所</ksj:publicOfficeName>
+	<ksj:address>平戸市辻町199</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_82">
+	<ksj:position xlink:href="#p82"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>舘浦出張所</ksj:publicOfficeName>
+	<ksj:address>平戸市生月町舘浦107-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_83">
+	<ksj:position xlink:href="#p83"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42207</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>度島連絡所</ksj:publicOfficeName>
+	<ksj:address>平戸市度島町1645-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_84">
+	<ksj:position xlink:href="#p84"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42208</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>松浦市役所</ksj:publicOfficeName>
+	<ksj:address>松浦市志佐町里免365</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_85">
+	<ksj:position xlink:href="#p85"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42208</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>福島支所</ksj:publicOfficeName>
+	<ksj:address>松浦市福島町塩浜免2944-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_86">
+	<ksj:position xlink:href="#p86"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42208</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>鷹島支所</ksj:publicOfficeName>
+	<ksj:address>松浦市鷹島町中通免1718-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_87">
+	<ksj:position xlink:href="#p87"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42208</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>御厨支所</ksj:publicOfficeName>
+	<ksj:address>松浦市御厨町里免385</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_88">
+	<ksj:position xlink:href="#p88"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42208</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>今福支所</ksj:publicOfficeName>
+	<ksj:address>松浦市今福町浦免382-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_89">
+	<ksj:position xlink:href="#p89"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42208</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>上志佐出張所</ksj:publicOfficeName>
+	<ksj:address>松浦市志佐町笛吹免920-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_90">
+	<ksj:position xlink:href="#p90"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42208</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>調川出張所</ksj:publicOfficeName>
+	<ksj:address>松浦市調川町下免136</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_91">
+	<ksj:position xlink:href="#p91"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42209</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>対馬市役所</ksj:publicOfficeName>
+	<ksj:address>対馬市厳原町国分1441</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_92">
+	<ksj:position xlink:href="#p92"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42209</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>豆酘出張所</ksj:publicOfficeName>
+	<ksj:address>対馬市厳原町豆酘3075-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_93">
+	<ksj:position xlink:href="#p93"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42209</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>佐須出張所</ksj:publicOfficeName>
+	<ksj:address>対馬市厳原町小茂田713-4</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_94">
+	<ksj:position xlink:href="#p94"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42209</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>佐賀出張所</ksj:publicOfficeName>
+	<ksj:address>対馬市峰町佐賀608-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_95">
+	<ksj:position xlink:href="#p95"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42209</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>仁田出張所</ksj:publicOfficeName>
+	<ksj:address>対馬市上県町樫滝493-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_96">
+	<ksj:position xlink:href="#p96"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42209</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>琴出張所</ksj:publicOfficeName>
+	<ksj:address>対馬市上対馬町琴820</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_97">
+	<ksj:position xlink:href="#p97"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42210</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>壱岐市役所</ksj:publicOfficeName>
+	<ksj:address>壱岐市郷ノ浦町本村触562</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_98">
+	<ksj:position xlink:href="#p98"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42210</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>勝本支所</ksj:publicOfficeName>
+	<ksj:address>壱岐市勝本町西戸触182-5</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_99">
+	<ksj:position xlink:href="#p99"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42210</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>芦辺支所</ksj:publicOfficeName>
+	<ksj:address>壱岐市芦辺町芦辺浦562</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_100">
+	<ksj:position xlink:href="#p100"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42210</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>石田支所</ksj:publicOfficeName>
+	<ksj:address>壱岐市石田町石田西触1290</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_101">
+	<ksj:position xlink:href="#p101"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42210</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>湯本事務所</ksj:publicOfficeName>
+	<ksj:address>壱岐市勝本町布気触818-10</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_102">
+	<ksj:position xlink:href="#p102"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42210</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>那賀事務所</ksj:publicOfficeName>
+	<ksj:address>壱岐市芦辺町中野郷西触362</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_103">
+	<ksj:position xlink:href="#p103"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42210</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>箱崎事務所</ksj:publicOfficeName>
+	<ksj:address>壱岐市芦辺町箱崎大左右触924</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_104">
+	<ksj:position xlink:href="#p104"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>五島市役所</ksj:publicOfficeName>
+	<ksj:address>五島市福江町1-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_105">
+	<ksj:position xlink:href="#p105"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>富江支所</ksj:publicOfficeName>
+	<ksj:address>五島市富江町富江165-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_106">
+	<ksj:position xlink:href="#p106"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>玉之浦支所</ksj:publicOfficeName>
+	<ksj:address>五島市玉之浦町玉之浦763</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_107">
+	<ksj:position xlink:href="#p107"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>三井楽支所</ksj:publicOfficeName>
+	<ksj:address>五島市三井楽町濱ノ畔1473-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_108">
+	<ksj:position xlink:href="#p108"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>岐宿支所</ksj:publicOfficeName>
+	<ksj:address>五島市岐宿町岐宿2535</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_109">
+	<ksj:position xlink:href="#p109"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>奈留支所</ksj:publicOfficeName>
+	<ksj:address>五島市奈留町浦1818-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_110">
+	<ksj:position xlink:href="#p110"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>奥浦出張所</ksj:publicOfficeName>
+	<ksj:address>五島市奥浦町1611-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_111">
+	<ksj:position xlink:href="#p111"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>崎山出張所</ksj:publicOfficeName>
+	<ksj:address>五島市上崎山町20-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_112">
+	<ksj:position xlink:href="#p112"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>本山出張所</ksj:publicOfficeName>
+	<ksj:address>五島市堤町1320</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_113">
+	<ksj:position xlink:href="#p113"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>大浜出張所</ksj:publicOfficeName>
+	<ksj:address>五島市浜町117</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_114">
+	<ksj:position xlink:href="#p114"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>椛島出張所</ksj:publicOfficeName>
+	<ksj:address>五島市本窯町8-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_115">
+	<ksj:position xlink:href="#p115"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>久賀島出張所</ksj:publicOfficeName>
+	<ksj:address>五島市久賀町217-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_116">
+	<ksj:position xlink:href="#p116"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42211</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>伊福貴分室</ksj:publicOfficeName>
+	<ksj:address>五島市伊福貴町376-13</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_117">
+	<ksj:position xlink:href="#p117"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>西海市役所</ksj:publicOfficeName>
+	<ksj:address>西海市大瀬戸町瀬戸樫浦郷2222</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_118">
+	<ksj:position xlink:href="#p118"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>西彼総合支所</ksj:publicOfficeName>
+	<ksj:address>西海市西彼町喰場郷1686-3</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_119">
+	<ksj:position xlink:href="#p119"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>西海総合支所</ksj:publicOfficeName>
+	<ksj:address>西海市西海町木場郷2235</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_120">
+	<ksj:position xlink:href="#p120"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>大島総合支所</ksj:publicOfficeName>
+	<ksj:address>西海市大島町1894-5</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_121">
+	<ksj:position xlink:href="#p121"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>崎戸総合支所</ksj:publicOfficeName>
+	<ksj:address>西海市崎戸町蠣浦郷1646-7</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_122">
+	<ksj:position xlink:href="#p122"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>松島出張所</ksj:publicOfficeName>
+	<ksj:address>西海市大瀬戸町松島内郷1384</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_123">
+	<ksj:position xlink:href="#p123"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>江島出張所</ksj:publicOfficeName>
+	<ksj:address>西海市崎戸町江島1475</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_124">
+	<ksj:position xlink:href="#p124"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42212</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>平島出張所</ksj:publicOfficeName>
+	<ksj:address>西海市崎戸町平島830</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_125">
+	<ksj:position xlink:href="#p125"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>雲仙市役所</ksj:publicOfficeName>
+	<ksj:address>雲仙市吾妻町牛口名714</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_126">
+	<ksj:position xlink:href="#p126"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>国見総合支所</ksj:publicOfficeName>
+	<ksj:address>雲仙市国見町土黒甲1100</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_127">
+	<ksj:position xlink:href="#p127"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>瑞穂総合支所</ksj:publicOfficeName>
+	<ksj:address>雲仙市瑞穂町西郷辛1285</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_128">
+	<ksj:position xlink:href="#p128"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>愛野総合支所</ksj:publicOfficeName>
+	<ksj:address>雲仙市愛野町甲3938</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_129">
+	<ksj:position xlink:href="#p129"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>千々石総合支所</ksj:publicOfficeName>
+	<ksj:address>雲仙市千々石町戊582</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_130">
+	<ksj:position xlink:href="#p130"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小浜総合支所</ksj:publicOfficeName>
+	<ksj:address>雲仙市小浜町北本町14</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_131">
+	<ksj:position xlink:href="#p131"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>南串山総合支所</ksj:publicOfficeName>
+	<ksj:address>雲仙市南串山町丙10538-4</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_132">
+	<ksj:position xlink:href="#p132"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42213</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>雲仙出張所</ksj:publicOfficeName>
+	<ksj:address>雲仙市小浜町雲仙292-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_133">
+	<ksj:position xlink:href="#p133"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>南島原市役所</ksj:publicOfficeName>
+	<ksj:address>南島原市西有家町里坊96-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_134">
+	<ksj:position xlink:href="#p134"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>深江支所</ksj:publicOfficeName>
+	<ksj:address>南島原市深江町丁2150</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_135">
+	<ksj:position xlink:href="#p135"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>布津支所</ksj:publicOfficeName>
+	<ksj:address>南島原市布津町乙1623-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_136">
+	<ksj:position xlink:href="#p136"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>有家支所</ksj:publicOfficeName>
+	<ksj:address>南島原市有家町山川58</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_137">
+	<ksj:position xlink:href="#p137"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>北有馬支所</ksj:publicOfficeName>
+	<ksj:address>南島原市北有馬町戊2747</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_138">
+	<ksj:position xlink:href="#p138"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>南有馬支所</ksj:publicOfficeName>
+	<ksj:address>南島原市南有馬町乙1023</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_139">
+	<ksj:position xlink:href="#p139"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>口之津支所</ksj:publicOfficeName>
+	<ksj:address>南島原市口之津町丙4252</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_140">
+	<ksj:position xlink:href="#p140"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42214</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>加津佐支所</ksj:publicOfficeName>
+	<ksj:address>南島原市加津佐町己3514</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_141">
+	<ksj:position xlink:href="#p141"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42307</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>長与町役場</ksj:publicOfficeName>
+	<ksj:address>長与町嬉里郷659-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_142">
+	<ksj:position xlink:href="#p142"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42308</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>時津町役場</ksj:publicOfficeName>
+	<ksj:address>時津町浦郷274-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_143">
+	<ksj:position xlink:href="#p143"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42321</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>東彼杵町役場</ksj:publicOfficeName>
+	<ksj:address>東彼杵町蔵本郷1850-6</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_144">
+	<ksj:position xlink:href="#p144"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42321</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>千綿支所</ksj:publicOfficeName>
+	<ksj:address>東彼杵町駄地郷148</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_145">
+	<ksj:position xlink:href="#p145"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42322</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>川棚町役場</ksj:publicOfficeName>
+	<ksj:address>川棚町中組郷1518-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_146">
+	<ksj:position xlink:href="#p146"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42323</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>波佐見町役場</ksj:publicOfficeName>
+	<ksj:address>波佐見町宿郷660</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_147">
+	<ksj:position xlink:href="#p147"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42383</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>小値賀町役場</ksj:publicOfficeName>
+	<ksj:address>小値賀町笛吹郷2376-１</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_148">
+	<ksj:position xlink:href="#p148"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42391</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>佐々町役場</ksj:publicOfficeName>
+	<ksj:address>佐々町本田原免168-2</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_149">
+	<ksj:position xlink:href="#p149"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42411</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>1</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>新上五島町役場</ksj:publicOfficeName>
+	<ksj:address>新上五島町青方郷1585-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_150">
+	<ksj:position xlink:href="#p150"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42411</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>有川支所</ksj:publicOfficeName>
+	<ksj:address>新上五島町有川郷720-1</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_151">
+	<ksj:position xlink:href="#p151"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42411</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>新魚目支所</ksj:publicOfficeName>
+	<ksj:address>新上五島町榎津郷491</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_152">
+	<ksj:position xlink:href="#p152"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42411</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>若松支所</ksj:publicOfficeName>
+	<ksj:address>新上五島町若松郷277-7</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_153">
+	<ksj:position xlink:href="#p153"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42411</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>奈良尾支所</ksj:publicOfficeName>
+	<ksj:address>新上五島町奈良尾郷379</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_154">
+	<ksj:position xlink:href="#p154"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42411</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>北魚目出張所</ksj:publicOfficeName>
+	<ksj:address>新上五島町立串郷302-20</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+<ksj:LocalGovernmentOfficeAndPublicMeetingFacility gml:id="fe01_155">
+	<ksj:position xlink:href="#p155"/>
+	<ksj:administrativeAreaCode codeSpace="AdministrativeAreaCode.xml">42202</ksj:administrativeAreaCode>
+	<ksj:publicOfficeClassification>2</ksj:publicOfficeClassification>
+	<ksj:publicOfficeName>九十九連絡所</ksj:publicOfficeName>
+	<ksj:address>佐世保市下船越町306-7</ksj:address>
+</ksj:LocalGovernmentOfficeAndPublicMeetingFacility>
+</ksj:Dataset>

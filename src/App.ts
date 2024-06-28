@@ -49,7 +49,7 @@ export default class App{
 
     let linesMesh:THREE.Mesh;
     // const segments = this.points.length * this.points.length;
-    const segments = this.points.length * 30;
+    const segments = this.points.length * 42 * 2;
     let linesMeshShader:THREE.WebGLProgramParametersWithUniforms|null=null;
     {
       const geometry=new THREE.BufferGeometry();
@@ -135,10 +135,16 @@ gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
 
       const vDiff=new THREE.Vector3();
       const vCamera=new THREE.Vector3(0,0,1);
-      const lineWidth=0.03;
+      const lineWidth=0.01;
       const vSide=new THREE.Vector3();
-      const minDistance=(box.max.x - box.min.x)*0.05;
-      const color=new THREE.Color(1,1,1);
+      const minDistance=(box.max.x - box.min.x)*0.01;
+      const colorList:THREE.Color[]=[];
+      for(let i=0;i<6;i++){
+        const color = new THREE.Color();
+        color.setHSL(i/6,1,0.5);
+        colorList.push(color);
+      }
+      new THREE.Color(1,1,1);
       for(let vFrom of vList){
         for(let vTo of vList){
           if(vFrom===vTo){
@@ -170,7 +176,7 @@ gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
             positions[vertexpos++]=vFrom.x+vSide.x;
             positions[vertexpos++]=vFrom.y+vSide.y;
             positions[vertexpos++]=vFrom.z+vSide.z;
-            color.setHSL(numConnected/6,1,0.5);
+            const color=colorList[numConnected%6];
             for(let i=0;i<6;i++){
               colors[colorpos++]=color.r;
               colors[colorpos++]=color.g;
@@ -204,7 +210,7 @@ gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
         linesMeshShader.uniforms["uTime"].value=performance.now()/1000;
       }
       // linesMesh.computeLineDistances();
-  
+      // console.log(numConnected/vList.length);
       renderer.render( scene, camera );
       this.stats.end();
     
