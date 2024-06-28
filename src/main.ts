@@ -14,8 +14,8 @@ async function mainAsync(){
   for(let code=1;code<=47;code+=1){
     gmlUrlList.push(`./P34-14_${("0"+code).slice(-2)}.xml`);
   }
-  for(let gmlUrl of gmlUrlList){
-    const xmlData = await fetch(gmlUrl).then((res)=>res.text());
+  const xmlDataList = await Promise.all(gmlUrlList.map((gmlUrl)=>fetch(gmlUrl).then((res)=>res.text())))
+  for(let xmlData of xmlDataList){
     const parser = new XMLParser({
       ignoreAttributes:false,
     });
