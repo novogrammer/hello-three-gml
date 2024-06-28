@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
 import Stats from "stats.js";
 import { getElementSize } from "./dom_utils";
 
@@ -9,6 +10,7 @@ export interface LatLng{
 
 export default class App{
   sectionElement:HTMLElement;
+  controls:TrackballControls;
   stats:Stats;
   points:LatLng[];
   min:LatLng;
@@ -45,6 +47,7 @@ export default class App{
     renderer.setSize( width, height );
     this.sectionElement.appendChild( renderer.domElement );
     
+    this.controls=new TrackballControls(camera,renderer.domElement);
 
 
     let linesMesh:THREE.Mesh;
@@ -189,6 +192,7 @@ gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
       renderer.setSize(width,height);
       camera.aspect=width/height;
       camera.updateProjectionMatrix();
+      this.controls.handleResize();
     }
     window.addEventListener("resize",onResize);
     onResize();
@@ -196,6 +200,7 @@ gl_FragColor.rgb*=smoothstep(0.25,0.0,abs(vUv.x-r));
     const animate=()=> {
     
       this.stats.begin();
+      this.controls.update();
 
       if(linesMeshShader){
         linesMeshShader.uniforms["uTime"].value=performance.now()/1000;
