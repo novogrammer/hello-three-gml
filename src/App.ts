@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import Stats from "stats.js";
 import { getElementSize } from "./dom_utils";
 
 export interface LatLng{
@@ -8,6 +9,7 @@ export interface LatLng{
 
 export default class App{
   sectionElement:HTMLElement;
+  stats:Stats;
   points:LatLng[];
   min:LatLng;
   max:LatLng;
@@ -17,6 +19,9 @@ export default class App{
       throw new Error("sectionElement is null");
     }
     this.sectionElement=sectionElement;
+    this.stats=new Stats();
+    this.stats.dom.style.top="0px";
+    document.body.appendChild( this.stats.dom );
     this.points=points;
     this.min=points.reduce((a,b)=>{
       return {
@@ -38,15 +43,15 @@ export default class App{
     
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize( width, height );
-    renderer.setAnimationLoop( animate );
     this.sectionElement.appendChild( renderer.domElement );
     
 
 
     let linesMesh:THREE.LineSegments;
+    const segments = this.points.length * this.points.length;
+    // const segments = this.points.length * 10;
     {
       const geometry=new THREE.BufferGeometry();
-      const segments = this.points.length * this.points.length;
       const positions = new Float32Array( segments * 3 );
       const colors = new Float32Array( segments * 3 );      
       geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ).setUsage( THREE.DynamicDrawUsage ) );
@@ -91,9 +96,9 @@ export default class App{
     window.addEventListener("resize",onResize);
     onResize();
 
-    function animate() {
+    const animate=()=> {
     
-
+      this.stats.begin();
       const {
         positions,
         colors,
@@ -113,6 +118,9 @@ export default class App{
           if(vFrom===vTo){
             continue;
           }
+          if(segments<numConnected){
+            continue;
+          }
           vDiff.x=vTo.x-vFrom.x;
           vDiff.y=vTo.y-vFrom.y;
           vDiff.z=vTo.z-vFrom.z;
@@ -123,12 +131,12 @@ export default class App{
             positions[vertexpos++]=vTo.x;
             positions[vertexpos++]=vTo.y;
             positions[vertexpos++]=vTo.z;
-            colors[colorpos++]=0.25;
-            colors[colorpos++]=0.25;
-            colors[colorpos++]=0.25;
-            colors[colorpos++]=0.25;
-            colors[colorpos++]=0.25;
-            colors[colorpos++]=0.25;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
+            colors[colorpos++]=1/16;
             numConnected++;
           }
 
@@ -141,8 +149,10 @@ export default class App{
       linesMesh.computeLineDistances();
   
       renderer.render( scene, camera );
+      this.stats.end();
     
     }
+    renderer.setAnimationLoop( animate );
   }
   
 
